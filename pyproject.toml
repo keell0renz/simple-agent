@@ -14,7 +14,10 @@ langchain-experimental = "^0.0.57"
 openai = "^1.17.1"
 chainlit = "^1.0.502"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = "simple_chatbot:main"
+dev = "simple_chatbot:dev"
