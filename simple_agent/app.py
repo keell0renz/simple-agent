@@ -63,7 +63,7 @@ async def main(message: cl.Message):
             #     async with cl.Step(name=event["name"]) as step:
             #         step.output = event["data"].get("output")  # type: ignore
 
-    except RuntimeError:
-        pass
+    except Exception as e:
+        print(e)
 
     history.append(AIMessage(content=response.content))
