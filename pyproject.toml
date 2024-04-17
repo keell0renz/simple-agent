@@ -13,11 +13,14 @@ langchain-core = "^0.1.42"
 langchain-experimental = "^0.0.57"
 openai = "^1.17.1"
 chainlit = "^1.0.502"
+langchain-community = "^0.0.33"
+geopy = "^2.4.1"
+psutil = "^5.9.8"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-app = "simple_chatbot:main"
-dev = "simple_chatbot:dev"
+app = "simple_agent:main"
+dev = "simple_agent:dev"
